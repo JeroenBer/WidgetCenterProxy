@@ -4,10 +4,11 @@ using Foundation;
 using Intents;
 using ObjCRuntime;
 
-namespace Binding
+namespace WidgetKitProxy
 {
     // @interface WidgetCenterProxy
     [SupportedOSPlatform("ios14.0")]
+    [BaseType(typeof(NSObject))]
     interface WidgetCenterProxy
     {
         // -(void)reloadTimeLinesOfKind:(NSString * _Nonnull)ofKind;
@@ -23,14 +24,15 @@ namespace Binding
         [Export("invalidateConfigurationRecommendations")]
         void InvalidateConfigurationRecommendations();
 
-        // -(void)getCurrentConfigurationsWithCompletion:(void (^ _Nonnull)(int))completion;
+        // -(void)getCurrentConfigurationsWithCompletion:(void (^ _Nonnull)(NSArray<WidgetInfoProxy *> * _Nonnull))completion;
         [Export("getCurrentConfigurationsWithCompletion:")]
-        void GetCurrentConfigurationsWithCompletion(Action<int> completion);
+        void GetCurrentConfigurationsWithCompletion(Action<NSArray<WidgetInfoProxy>> completion);
     }
 
     // @interface WidgetInfoProxy
     [SupportedOSPlatform("ios14.0")]
-    interface WidgetInfoProxy
+    [BaseType(typeof(NSObject))]
+    interface WidgetInfoProxy : INativeObject
     {
         // @property (copy, nonatomic) NSString * _Nonnull kind;
         [Export("kind")]
@@ -38,7 +40,7 @@ namespace Binding
 
         // @property (nonatomic) int family;
         [Export("family")]
-        int Family { get; set; }
+        nint Family { get; set; }
 
         // @property (nonatomic, strong) INIntent * _Nullable configuration;
         [NullAllowed, Export("configuration", ArgumentSemantic.Strong)]

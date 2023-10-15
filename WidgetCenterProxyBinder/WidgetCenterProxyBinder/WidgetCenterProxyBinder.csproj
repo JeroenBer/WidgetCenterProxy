@@ -11,25 +11,31 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <RootNamespace>NativeLibrary</RootNamespace>
+    <RootNamespace>WidgetKitProxy</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>NativeLibrary</AssemblyName>
+    <AssemblyName>WidgetKitProxy</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>com.hcsaba.WidgetCenterBinder.Maui</PackageId>
+    <Version>1.0.1-alpha</Version>
+    <Title>WidgetCenterBinder</Title>
+    <Description>Bind WidgetKit to your Xamarin app.</Description>
+    <Authors>Csaba Huszar</Authors>
+    <PackageOutputPath>nugetoutput</PackageOutputPath>
+    <PackageLicensePath>LICENSE.txt</PackageLicensePath>
   </PropertyGroup>
 
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
   </ItemGroup>
 
-  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
-    <NativeReference Include="..\..\VendorFrameworks\swift-framework-proxy\WidgetCenterProxy.framework">
+  <ItemGroup>
+    <NativeReference Include="..\..\VendorFrameworks\swift-framework-proxy\WidgetCenterProxy.xcframework">
       <Kind>Framework</Kind>
       <Frameworks>Foundation WidgetKit Intents</Frameworks>
-    </NativeReference>
-  </ItemGroup>
-  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">
-    <NativeReference Include="..\..\VendorFrameworks\swift-framework-proxy-maccatalyst\WidgetCenterProxy.framework">
-      <Kind>Framework</Kind>
-      <Frameworks>Foundation WidgetKit Intents</Frameworks>
+      <SmartLink>False</SmartLink>
     </NativeReference>
   </ItemGroup>
 </Project>
