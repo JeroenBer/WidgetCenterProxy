@@ -5,7 +5,7 @@
 //  Created by huszarcsaba on 2020. 09. 22..
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 //! Project version number for WidgetCenterProxy.
 FOUNDATION_EXPORT double WidgetCenterProxyVersionNumber;
