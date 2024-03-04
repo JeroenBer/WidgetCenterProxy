@@ -1,13 +1,14 @@
 using System;
+using System.Runtime.Versioning;
 using Foundation;
 using Intents;
 using ObjCRuntime;
 
 namespace Binding
 {
-	// @interface WidgetCenterProxy : NSObject
-	[iOS (14,0)]
-	[BaseType (typeof(NSObject))]
+    // @interface WidgetCenterProxy : NSObject
+    [SupportedOSPlatform("ios14.0")]
+    [BaseType (typeof(NSObject))]
 	interface WidgetCenterProxy
 	{
 		// -(void)reloadTimeLinesOfKind:(NSString * _Nonnull)ofKind;
@@ -23,9 +24,9 @@ namespace Binding
 		void GetCurrentConfigurationsWithCompletion (Action<NSArray<WidgetInfoProxy>> completion);
 	}
 
-	// @interface WidgetInfoProxy : NSObject
-	[iOS (14,0)]
-	[BaseType (typeof(NSObject))]
+    // @interface WidgetInfoProxy : NSObject
+    [SupportedOSPlatform("ios14.0")]
+    [BaseType (typeof(NSObject))]
 	interface WidgetInfoProxy : INativeObject
 	{
 		// @property (copy, nonatomic) NSString * _Nonnull kind;

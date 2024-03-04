@@ -1,7 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WidgetCenterProxyBinder", "WidgetCenterProxyBinder\WidgetCenterProxyBinder.csproj", "{8F198950-2819-4114-9317-886D141E25B9}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WidgetCenterProxyBinder", "WidgetCenterProxyBinder\WidgetCenterProxyBinder.csproj", "{8F198950-2819-4114-9317-886D141E25B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBindingApp", "TestBindingApp\TestBindingApp.csproj", "{053656A5-CA9A-4EBC-9F73-8008360EA860}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +16,14 @@ Global
 		{8F198950-2819-4114-9317-886D141E25B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F198950-2819-4114-9317-886D141E25B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F198950-2819-4114-9317-886D141E25B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053656A5-CA9A-4EBC-9F73-8008360EA860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053656A5-CA9A-4EBC-9F73-8008360EA860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053656A5-CA9A-4EBC-9F73-8008360EA860}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{053656A5-CA9A-4EBC-9F73-8008360EA860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053656A5-CA9A-4EBC-9F73-8008360EA860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053656A5-CA9A-4EBC-9F73-8008360EA860}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
