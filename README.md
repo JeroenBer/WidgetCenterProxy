@@ -6,9 +6,10 @@ Created it based on the [binding-swift walkthrough](https://docs.microsoft.com/e
 
 If you run build.fat.sh you'll get WidgetCenterProxy framework, which will be used by WidgetCenterProxyBinder project. You can use WidgetCenterProxyBinder in your app to handle iOS14 widgets.
 
-# Upgrade to .NET 8
+# Upgrade to .NET 9
 
-Upgraded to .NET8. Build with XCode 15.2.
+- Upgraded to .NET9. Build with XCode 16.2.
+- Added support for Arm64 (M processor) simulator
 
 ## To build:
 

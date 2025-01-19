@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net8.0-ios</TargetFrameworks>
+    <TargetFrameworks>net9.0-ios</TargetFrameworks>
     <Nullable>disable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <IsBindingProject>true</IsBindingProject>
@@ -17,9 +17,9 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <PackageId>com.hcsaba.WidgetCenterBinder.Net8</PackageId>
-    <Version>1.0.3-alpha</Version>
+    <Version>9.0.0-alpha</Version>
     <Title>WidgetCenterBinder</Title>
-    <Description>Bind WidgetKit to your iOS Net8 app.</Description>
+    <Description>Bind WidgetKit to your iOS NET 9 app.</Description>
     <Authors>Csaba Huszar, upgraded by Jeroen Bernsen</Authors>
     <PackageOutputPath>nugetoutput</PackageOutputPath>
     <RepositoryUrl>https://github.com/JeroenBer/WidgetCenterProxy</RepositoryUrl> 

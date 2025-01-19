@@ -1,7 +1,7 @@
 # Builds a fat library for a given xcode project (framework)
 
 echo "Define parameters"
-IOS_SDK_VERSION="17.0"
+IOS_SDK_VERSION="18.0"
 SWIFT_PROJECT_NAME="WidgetCenterProxy"
 SWIFT_PROJECT_PATH="$SWIFT_PROJECT_NAME/$SWIFT_PROJECT_NAME.xcodeproj"
 SWIFT_BUILD_PATH="$SWIFT_PROJECT_NAME/build"
@@ -9,7 +9,7 @@ SWIFT_OUTPUT_PATH="VendorFrameworks/swift-framework-proxy"
 
 echo "Build iOS framework for simulator(x86_64 only) and device"
 rm -Rf "$SWIFT_BUILD_PATH"
-xcodebuild -sdk iphonesimulator -project "$SWIFT_PROJECT_PATH" -configuration Release -arch x86_64
+xcodebuild -sdk iphonesimulator -project "$SWIFT_PROJECT_PATH" -configuration Release -arch x86_64 -arch arm64
 xcodebuild -sdk iphoneos -project "$SWIFT_PROJECT_PATH" -configuration Release
 
 echo "Create fat binaries for Release-iphoneos and Release-iphonesimulator configuration"
