@@ -17,7 +17,7 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <PackageId>com.hcsaba.WidgetCenterBinder.Net8</PackageId>
-    <Version>9.0.0-alpha</Version>
+    <Version>9.0.1-alpha</Version>
     <Title>WidgetCenterBinder</Title>
     <Description>Bind WidgetKit to your iOS NET 9 app.</Description>
     <Authors>Csaba Huszar, upgraded by Jeroen Bernsen</Authors>
@@ -30,7 +30,7 @@
     <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="..\..\VendorFrameworks\swift-framework-proxy\WidgetCenterProxy.framework">
+    <NativeReference Include="..\..\XCFrameworks\WidgetCenterProxy.xcframework">
       <Kind>Framework</Kind>
       <Frameworks>Foundation WidgetKit Intents</Frameworks>
       <SmartLink>True</SmartLink>

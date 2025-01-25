@@ -6,6 +6,9 @@
     <ImplicitUsings>true</ImplicitUsings>
     <SupportedOSPlatformVersion>12.4</SupportedOSPlatformVersion>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\WidgetCenterProxyBinder\WidgetCenterProxyBinder.csproj" />
   </ItemGroup>

@@ -39,7 +39,7 @@ namespace TestBindingApp
             {
                 Debug.WriteLine("Calling Reload");
                 new Binding.WidgetCenterProxy().ReloadAllTimeLines();
-                Debug.WriteLine("Finished callingn Reload");
+                Debug.WriteLine("Finished calling Reload");
             }
             catch(Exception ex)
             {
