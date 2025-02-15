@@ -338,3 +338,13 @@ ModelManifest.xml
 
 VendorFrameworks/
 archive/
+
+# Rider
+.idea/
+
+# VS Code
+.vs/
+
+# nuget output
+nugetoutput/
+XCFrameworks/

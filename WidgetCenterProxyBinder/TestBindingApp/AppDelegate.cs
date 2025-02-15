@@ -38,8 +38,8 @@ namespace TestBindingApp
             try
             {
                 Debug.WriteLine("Calling Reload");
-                new Binding.WidgetCenterProxy().ReloadAllTimeLines();
-                Debug.WriteLine("Finished callingn Reload");
+                new WidgetKit.WidgetCenterProxy().ReloadAllTimeLines();
+                Debug.WriteLine("Finished calling Reload");
             }
             catch(Exception ex)
             {
