@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5391DC84251A818600F5EFD5"
-               BuildableName = "WidgetCenterProxy.framework"
-               BlueprintName = "WidgetCenterProxy"
-               ReferencedContainer = "container:WidgetCenterProxy.xcodeproj">
+               BuildableName = "WCP.framework"
+               BlueprintName = "WCP"
+               ReferencedContainer = "container:WCP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5391DC84251A818600F5EFD5"
-            BuildableName = "WidgetCenterProxy.framework"
-            BlueprintName = "WidgetCenterProxy"
-            ReferencedContainer = "container:WidgetCenterProxy.xcodeproj">
+            BuildableName = "WCP.framework"
+            BlueprintName = "WCP"
+            ReferencedContainer = "container:WCP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

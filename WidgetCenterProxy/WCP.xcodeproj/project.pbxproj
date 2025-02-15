@@ -14,7 +14,7 @@
 
 /* Begin PBXFileReference section */
 		532F1F34251B414800C0F917 /* WidgetInfoProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetInfoProxy.swift; sourceTree = "<group>"; };
-		5391DC85251A818600F5EFD5 /* WidgetCenterProxy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WidgetCenterProxy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5391DC85251A818600F5EFD5 /* WCP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5391DC88251A818600F5EFD5 /* WidgetCenterProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WidgetCenterProxy.h; sourceTree = "<group>"; };
 		5391DC89251A818600F5EFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5391DC91251A824000F5EFD5 /* WidgetCenterProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetCenterProxy.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		5391DC86251A818600F5EFD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5391DC85251A818600F5EFD5 /* WidgetCenterProxy.framework */,
+				5391DC85251A818600F5EFD5 /* WCP.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,9 +72,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5391DC84251A818600F5EFD5 /* WidgetCenterProxy */ = {
+		5391DC84251A818600F5EFD5 /* WCP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5391DC8D251A818600F5EFD5 /* Build configuration list for PBXNativeTarget "WidgetCenterProxy" */;
+			buildConfigurationList = 5391DC8D251A818600F5EFD5 /* Build configuration list for PBXNativeTarget "WCP" */;
 			buildPhases = (
 				5391DC80251A818600F5EFD5 /* Headers */,
 				5391DC81251A818600F5EFD5 /* Sources */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = WidgetCenterProxy;
+			name = WCP;
 			productName = WidgetCenterProxy;
-			productReference = 5391DC85251A818600F5EFD5 /* WidgetCenterProxy.framework */;
+			productReference = 5391DC85251A818600F5EFD5 /* WCP.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5391DC7F251A818500F5EFD5 /* Build configuration list for PBXProject "WidgetCenterProxy" */;
+			buildConfigurationList = 5391DC7F251A818500F5EFD5 /* Build configuration list for PBXProject "WCP" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5391DC84251A818600F5EFD5 /* WidgetCenterProxy */,
+				5391DC84251A818600F5EFD5 /* WCP */,
 			);
 		};
 /* End PBXProject section */
@@ -327,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5391DC7F251A818500F5EFD5 /* Build configuration list for PBXProject "WidgetCenterProxy" */ = {
+		5391DC7F251A818500F5EFD5 /* Build configuration list for PBXProject "WCP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5391DC8B251A818600F5EFD5 /* Debug */,
@@ -336,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5391DC8D251A818600F5EFD5 /* Build configuration list for PBXNativeTarget "WidgetCenterProxy" */ = {
+		5391DC8D251A818600F5EFD5 /* Build configuration list for PBXNativeTarget "WCP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5391DC8E251A818600F5EFD5 /* Debug */,

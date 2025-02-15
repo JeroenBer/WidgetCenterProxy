@@ -4,7 +4,7 @@ using Foundation;
 using Intents;
 using ObjCRuntime;
 
-namespace Binding
+namespace WidgetKit
 {
     // @interface WidgetCenterProxy : NSObject
     [SupportedOSPlatform("ios14.0")]

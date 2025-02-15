@@ -16,21 +16,32 @@
   
   <PropertyGroup>
     <IsPackable>true</IsPackable>
-    <PackageId>com.hcsaba.WidgetCenterBinder.Net8</PackageId>
-    <Version>9.0.1-alpha</Version>
-    <Title>WidgetCenterBinder</Title>
-    <Description>Bind WidgetKit to your iOS NET 9 app.</Description>
-    <Authors>Csaba Huszar, upgraded by Jeroen Bernsen</Authors>
+    <PackageId>WidgetKit.WidgetCenterProxy</PackageId>
+    <Version>9.0.2-alpha</Version>
+    <Title>WidgetCenterProxy</Title>
+    <Description>Bind WidgetKit to your iOS .NET app.</Description>
+    <Authors>Jeroen Bernsen, originally Csaba Huszar</Authors>
     <PackageOutputPath>nugetoutput</PackageOutputPath>
     <RepositoryUrl>https://github.com/JeroenBer/WidgetCenterProxy</RepositoryUrl> 
     <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/JeroenBer/WidgetCenterProxy</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>  
   
+  <ItemGroup>
+    <!-- Include the LICENSE file -->
+    <None Include="../../LICENSE" Pack="true" PackagePath="/" />
+  
+    <!-- Include the README file -->
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>  
+
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="..\..\XCFrameworks\WidgetCenterProxy.xcframework">
+    <NativeReference Include="..\..\XCFrameworks\WCP.xcframework">
       <Kind>Framework</Kind>
       <Frameworks>Foundation WidgetKit Intents</Frameworks>
       <SmartLink>True</SmartLink>
