@@ -4,8 +4,10 @@
 Call WidgetCenter methods from iOS .NET (MAUI).
 
 ## Usage
+
+Add package reference in project file
 ```
-Add nuget package
+<PackageReference Include="WidgetKit.WidgetCenterProxy" Version="9.0.3" />
 ```
 
 ```
